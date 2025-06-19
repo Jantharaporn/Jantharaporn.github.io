@@ -1,40 +1,82 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แนะนำตัวเอง</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            padding: 30px;
-            color: #333;
-        }
-        .container {
-            background-color: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: auto;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
-            font-size: 1.1em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>แนะนำตัวเอง</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      font-family: 'Sarabun', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .profile-card {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #66a6ff;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 0 0 10px 0;
+      font-weight: 700;
+      font-size: 28px;
+      color: #0a3d62;
+    }
+
+    p {
+      margin: 6px 0;
+      font-size: 16px;
+      line-height: 1.4;
+      color: #555;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>สวัสดีค่ะ</h1>
-        <p>ชื่อ: <strong>จัรทราภรณ์ ผาสีดา</strong></p>
-        <p>อายุ: 19 ปี</p>
-        <p>อาชีพ: นักเขียนโปรแกรม</p>
-        <p>ความสนใจ: การเขียนโปรแกรม, การทำธุรกิจ, แบรนด์ต่างๆ</p>
-        <p>ช่องทางการติดต่อ: <a href="mailto:somchai@example.com">chantarapon48@gmail.com</a></p>
-    </div>
+  <div class="profile-card">
+    <img
+      src="https://www.facebook.com/jantharaporn.phaseeda"
+      alt="รูปโปรไฟล์"
+      class="profile-img"
+    />
+    <h1>จันทราภรณ์ ผาสีดา</h1>
+    <p>นักพัฒนาเว็บไซต์</p>
+    <p>อายุ 19 ปี</p>
+    <p>สนใจ: การเขียนโปรแกรม, การทำธุรกิจ, ศึกษาแบรนด์ต่างๆ</p>
+    <p>ติดต่อ: <a href="mailto:somchai@example.com">chantarapon48@gmail.com.com</a></p>
+  </div>
 </body>
 </html>
+
+
+
