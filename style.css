@@ -1,0 +1,182 @@
+/* ==============================
+   Modern Light Theme - New Design
+   - ฟอนต์: Sarabun (เหมาะกับภาษาไทย)
+   - โทน: ขาว / เทาอ่อน / ฟ้าอมเขียว (no black)
+   - การจัดวาง: กลางข้อความ (text-align:center) แต่ layout ยืดหยุ่น
+============================== */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg: #f7fbfd;          /* พื้นหลังหลัก */
+  --card: #ffffff;        /* กล่องเนื้อหา */
+  --muted: #6b7280;       /* สีข้อความรอง */
+  --text: #102a43;        /* สีข้อความหลัก (เข้มแต่ไม่ดำ) */
+  --accent: #18a999;      /* สีหลักสดใส (ฟ้า-เขียว) */
+  --accent-2: #4aa3ff;    /* สีรองสำหรับลิงก์ */
+  --glass: rgba(255,255,255,0.6);
+  --shadow: 0 8px 20px rgba(16, 42, 67, 0.08);
+  --radius: 14px;
+}
+
+/* ---------- Global ---------- */
+* { box-sizing: border-box; }
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #f7fbfd 0%, #eef7f8 100%);
+  font-family: 'Sarabun', sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height: 1.6;
+}
+
+/* เนื้อหากลางเพจ แต่ไม่บังคับให้ทั้งหน้ากลางแนวตั้ง */
+.container {
+  width: 94%;
+  max-width: 1000px;
+  margin: 36px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* กึ่งกลางแนวนอน */
+  text-align: center;  /* ตัวหนังสือกึ่งกลาง ตามที่ขอ */
+}
+
+/* ---------- Header ---------- */
+header {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(24,169,153,0.08), rgba(74,163,255,0.06));
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(74,163,255,0.06);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: var(--text);
+}
+
+header p {
+  margin: 8px 0 0 0;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* ---------- Card / Section ---------- */
+.card {
+  background: var(--card);
+  width: 100%;
+  padding: 26px 28px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(16,42,67,0.04);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(16,42,67,0.08);
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  color: var(--accent);
+  display: inline-block;
+  border-bottom: 3px solid rgba(24,169,153,0.12);
+  padding-bottom: 6px;
+}
+
+/* ---------- Profile ---------- */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--glass);
+  box-shadow: 0 6px 18px rgba(24,169,153,0.12);
+  margin: 14px auto;
+  display: block;
+}
+
+.profile-name {
+  margin: 10px 0 2px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.profile-sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- Lists & Text ---------- */
+.list-plain {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.list-plain li {
+  color: var(--text);
+  font-weight: 400;
+  font-size: 0.98rem;
+}
+
+/* ---------- Links / Buttons ---------- */
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(74,163,255,0.12);
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+
+.btn:active { transform: translateY(1px); }
+.btn:hover { box-shadow: 0 18px 40px rgba(74,163,255,0.16); }
+
+/* ---------- Footer ---------- */
+footer {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 6px auto 36px;
+}
+
+/* ---------- Responsive ---------- */
+@media (min-width: 720px) {
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+    text-align: left; /* ในกริด ให้เนื้อหาแต่ละคอลัมน์ชิดซ้าย แต่ยังรวมอยู่ใน container กึ่งกลาง */
+  }
+  .card.text-center { text-align: center; } /* ถ้าต้องการ */
+  .list-plain { align-items: flex-start; }
+}
