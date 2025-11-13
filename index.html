@@ -1,44 +1,92 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แนะนำตัวเอง</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            padding: 30px;
-            color: #333;
-        }
-        .container {
-            background-color: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: auto;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
-            font-size: 1.1em;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>สวัสดีค่ะ</h1>
-        <p>ชื่อ: <strong>จันทราภรณ์ ผาสีดา</strong></p>
-        <p>อายุ: 19 ปี</p>
-        <p>อาชีพ: นักพัฒนาเว็บไซต์</p>
-        <p>ความสนใจ: การเขียนโปรแกรม, แบรนด์ต่างๆ, การทำธุรกิจ</p>
-        <p>ช่องทางการติดต่อ: <a href="mailto:somchai@example.com">chantarapon48@gmail.com</a></p>
-    </div>
+    <center>
+  <div class="container">
+    <header>
+      <h1>Profile</h1>
+      <p>Portfolio & Introduction</p>
+    </header>
+
+    <!-- 1. แนะนำตัว -->
+    <section class="card" id="profile">
+      <h2>1. แนะนำตัว (Introduction / Profile)</h2>
+        <p>- รูปโปรไฟล์</p>
+        <p><img src="PIC/1928f89b-0ab4-4f64-a27a-794f6715fac6.jpg" alt="" width="400" height="400s"></p>
+        <p><strong>- ชื่อ–นามสกุล </strong>: จันทราภรณ์ ผาสีดา (Jantharaporn Phaseeda)</p>
+        <p><strong>- ชื่อเล่น </strong>: แพรว (Pawe)</p>
+        <p><strong>- มหาวิทยาลัย </strong>: ราชภัฏอุดรธานี</p>
+        <p><strong>- คณะ </strong>: วิทยาศาสตร์</p>
+        <p><strong>- สาขา </strong>: เทคโนโลยีสารสนเทศ (information technology)</p>
+        <p><strong>- ปีการศึกษา </strong>: ชั้นปีที่ 2</p>
+        <p><strong>- ความสนใจเฉพาะทาง </strong>คือ AI, Web Dev, Cybersecurity</p>
+    </section>
+
+    <!-- 2. ทักษะ -->
+    <section class="card" id="skills">
+      <h2>2. ทักษะ (Skills)</h2>
+        <p><strong>- Programming</strong>: Java, HTML/CSS, JavaScript, ภาษา C</p>
+        <p><strong>- AI & Data</strong>: SQL, Gemini</p>
+        <p><strong>- Tools</strong>: Github, Visual studio Code, Figma</p>
+        <p><strong>- Soft Skills:</strong> การสื่อสาร, การทำงานเป็นทีม, การแก้ปัญหา, การตรงต่อเวลา</p>
+    </section>
+
+    <!-- 3. ผลงาน -->
+    <section class="card" id="projects">
+      <h2>3. ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+        <p><strong>- เว็บไซต์ที่เคยพัฒนา </strong>: <a href="file:///D:/jantharapornn/index1.html">เว็บไซต์แนะนำเครื่องดนตรีไทย</a></p>
+        <img src="PIC/Screenshot 2025-11-13 102851.png" alt="" width="400" height="400s"></p>
+        <p><strong>- ออกแบบ Figma เกี่ยวกับ แอปขายรองเท้าแบรนด์</strong>: <a href="https://surl.li/mfjrfq">แอปขายรองเท้าแบรนด์</a></p>
+        <p><img src="PIC/Screenshot 2025-11-13 104132.png" alt="" width="400" height="400s"></p>
+    </section>
+
+    <!-- 4. การศึกษา -->
+    <section class="card" id="education">
+      <h2>4. ประวัติการศึกษา (Education)</h2>
+      <p><strong>โรงเรียนมารีย์พิทักษ์เซกา 2560-2563</p>
+      <p>โรงเรียนมัธยมเซกา 2564-2566</p>
+      <p>ปัจจุบันศึกษาที่ : คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์<br>
+      มหาวิทยาลัยราชภัฏอุดรธานี</strong></p>
+    </section>
+
+    <!-- 5. กิจกรรม -->
+    <section class="card" id="activities">
+      <h2>5. กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+      <p><strong>- ผู้เข้าร่วมการอบรม “การประยุกต์การใช้งาน Dashboard เพื่อความมั่นคงปลอดภัย”</strong></p>
+      <p><img src="PIC/535111685_1548387039480572_6134099334212713860_n.jpg" alt="" width="600" height="400s"></p>
+      <p><strong>- เข้าร่วมแข่งขันแสตนเชียร์ กีฬาวังแดงเกมส์ ครั้งที่ 34</strong></p>
+      <p><img src="PIC/56faa036-5af9-452c-b5e9-94971b2321fa.jpg" alt="" width="600" height="400s"></p>
+      <p><strong>- certificate เรื่อง Cybersecurity</strong></p>
+      <p><img src="PIC/Introduction_to_Cybersecurity_certificate_67040233119-udru-ac-th_876c3405-544a-4a7a-b60f-2eab29274421_page-0001.jpg" alt="" width="600" height="400s"></p>
+    </section>
+
+    <!-- 6. ติดต่อ -->
+    <section class="card" id="contact">
+      <h2>6. ติดต่อ (Contact)</h2>
+        <p>📧 Email: 67040233119@ud.ac.th</p>
+        <p>🌐 GitHub: <a href="https://github.com/Jantharaporn" target="_blank">https://github.com/Jantharaporn</a></p>
+        <p>💼 Facebook: <a href="https://www.facebook.com/jantharaporn.phaseeda">Facebook</a></p>
+        <p>🏠 ที่อยู่จังหวัด: 238 หมู่ 10 อ.เซกา จ.บึงกาฬ 38150</p>
+    </section>
+
+    <!-- 7. เป้าหมาย -->
+    <section class="card" id="goals">
+      <h2>7. องค์ประกอบเสริม</h2>
+      <p>เป้าหมายในอนาคต และ Career Interest</p>
+      <p>เป้าหมายในอนาคจอยากเป็น: Web Developer หรือ AI Engineer</p>
+      <p>ความสนใจ: สนใจในการเขียนโปรแกรมภาษา Java อยากเรียนรู้ให้เข้าใจมากยิ่งขึ้นเพื่อการทำงานในอนาคต</p>
+    </section>
+
+    <footer>
+      © 2025 Portfolio Jantharaporn
+    </footer>
+  </div>
+  </center>
 </body>
 </html>
-
-
-
-
